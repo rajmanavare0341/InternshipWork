@@ -1,0 +1,207 @@
+/* ============================================================
+   PROFESSIONAL LEARNSKILLX CERTIFICATE
+   ============================================================ */
+.professional-certificate-page{
+  width:100%;
+  display:flex;
+  justify-content:center;
+}
+.professional-cert{
+  width:min(100%, 1040px);
+  min-height:700px;
+  box-sizing:border-box;
+  border:1px solid #C9962B !important;
+  border-radius:4px !important;
+  padding:42px 54px 30px;
+  background:
+    radial-gradient(circle at 50% 50%, rgba(201,150,43,.035), transparent 36%),
+    linear-gradient(135deg,#fffefa,#fffdf8 50%,#fffefa);
+  box-shadow:0 14px 40px rgba(25,28,38,.10);
+  overflow:hidden;
+}
+.professional-cert::before{
+  inset:12px !important;
+  border:1px solid rgba(201,150,43,.55) !important;
+  border-radius:2px !important;
+}
+.professional-cert::after{
+  content:'';
+  position:absolute;
+  inset:19px;
+  border:1px solid rgba(201,150,43,.20);
+  pointer-events:none;
+}
+.cert-corner{
+  position:absolute;
+  width:54px;height:54px;
+  border-color:#C9962B;
+  border-style:solid;
+  z-index:2;
+}
+.cert-corner-tl{left:20px;top:20px;border-width:2px 0 0 2px;}
+.cert-corner-tr{right:20px;top:20px;border-width:2px 2px 0 0;}
+.cert-corner-bl{left:20px;bottom:20px;border-width:0 0 2px 2px;}
+.cert-corner-br{right:20px;bottom:20px;border-width:0 2px 2px 0;}
+.cert-watermark{
+  position:absolute;
+  left:50%;top:53%;
+  transform:translate(-50%,-50%) rotate(-18deg);
+  font-family:var(--font-display);
+  font-size:230px;font-weight:800;
+  color:rgba(201,150,43,.025);
+  letter-spacing:-.12em;
+  pointer-events:none;
+}
+.cert-header{
+  position:relative;z-index:3;
+  display:flex;justify-content:space-between;align-items:center;
+  gap:20px;
+}
+.cert-brand{display:flex;align-items:center;gap:12px;text-align:left;}
+.cert-brand-logo{
+  width:58px !important;height:58px !important;
+  margin:0 !important;border:1px solid #C9962B !important;
+}
+.cert-brand-name{
+  font-family:var(--font-display);font-weight:800;
+  font-size:20px;letter-spacing:.05em;color:#252733;
+}
+.cert-brand-name span{color:#A6781C;}
+.cert-brand-sub{
+  margin-top:3px;font-size:8px;letter-spacing:.18em;
+  color:#888B96;font-weight:700;
+}
+.cert-official{
+  border:1px solid #C9962B;border-radius:100px;
+  padding:7px 13px;font-size:8px;letter-spacing:.16em;
+  color:#8C6A1F;font-weight:800;
+  background:rgba(255,255,255,.65);
+}
+.cert-rule{
+  position:relative;z-index:3;
+  display:flex;align-items:center;gap:10px;
+  margin:23px 0 25px;
+}
+.cert-rule span{height:1px;flex:1;background:linear-gradient(90deg,transparent,#C9962B);}
+.cert-rule span:last-child{background:linear-gradient(90deg,#C9962B,transparent);}
+.cert-rule i{font-style:normal;color:#C9962B;font-size:13px;}
+.professional-cert .cert-eyebrow{
+  position:relative;z-index:3;
+  font-size:10px;letter-spacing:.30em;color:#8C6A1F;
+}
+.professional-cert .cert-title{
+  position:relative;z-index:3;
+  margin:13px 0 0;font-family:var(--font-body);
+  font-size:13px;color:#777A85;
+}
+.professional-cert .cert-name{
+  position:relative;z-index:3;
+  margin:10px 0 0;font-family:Georgia,'Times New Roman',serif;
+  font-size:42px;font-weight:600;letter-spacing:.01em;
+  color:#242630;
+}
+.cert-name-line{
+  position:relative;z-index:3;
+  width:230px;height:1px;background:#C9962B;
+  margin:9px auto 17px;
+}
+.professional-cert .cert-presented{
+  position:relative;z-index:3;
+  max-width:680px;margin:0 auto;
+  font-size:14px;line-height:1.65;color:#626572;
+}
+.professional-cert .cert-presented strong{color:#252733;}
+.cert-award-row{
+  position:relative;z-index:3;
+  display:flex;justify-content:center;align-items:center;
+  gap:70px;margin:22px auto 5px;
+}
+.professional-medal{margin:0;width:130px;}
+.professional-medal .medal-disc{
+  width:88px;height:88px;
+  font-size:39px;
+  box-shadow:0 8px 22px rgba(20,22,43,.16),inset 0 0 0 3px rgba(255,255,255,.45);
+}
+.professional-medal .medal-ribbon{top:70px;height:54px;}
+.professional-medal .medal-label{margin-top:11px;}
+.cert-score-box{
+  min-width:175px;padding:14px 24px;
+  border-left:1px solid #DED5BF;
+  text-align:left;
+}
+.cert-score-box-alone{border-left:0;text-align:center;margin:22px auto 0;}
+.cert-score-label{
+  font-size:8px;letter-spacing:.18em;font-weight:800;color:#8B8E99;
+}
+.cert-score{
+  font-family:var(--font-display);font-weight:800;
+  font-size:40px;line-height:1;color:#8C6A1F;margin:5px 0;
+}
+.cert-score-detail{font-size:10px;color:#777A85;}
+.cert-tier-line{position:relative;z-index:3;margin-top:12px;}
+.tier-pill{
+  display:inline-flex;padding:6px 14px;border-radius:100px;
+  font-size:9px;letter-spacing:.13em;font-weight:800;
+  border:1px solid currentColor;background:rgba(255,255,255,.7);
+}
+.professional-cert .tier-pill.tier-gold{color:#8C6A1F;background:#FFF8DE;}
+.professional-cert .tier-pill.tier-silver{color:#5F637A;background:#F1F2F6;}
+.professional-cert .tier-pill.tier-bronze{color:#8A4F20;background:#FFF0E4;}
+.cert-signatures{
+  position:relative;z-index:3;
+  display:grid;grid-template-columns:1fr 90px 1fr;
+  align-items:end;gap:30px;
+  margin:28px auto 19px;max-width:760px;
+}
+.cert-signature{text-align:center;}
+.signature-line{height:1px;background:#9699A2;margin-bottom:7px;}
+.signature-name{font-family:Georgia,'Times New Roman',serif;font-size:14px;color:#373943;}
+.signature-role{font-size:7px;letter-spacing:.15em;color:#999BA4;margin-top:3px;font-weight:700;}
+.cert-seal-small{text-align:center;}
+.seal-inner{
+  width:54px;height:54px;margin:0 auto 5px;border-radius:50%;
+  border:2px solid #C9962B;outline:1px solid #E3D3A5;outline-offset:-5px;
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--font-display);font-size:12px;font-weight:800;color:#8C6A1F;
+}
+.cert-seal-small span{font-size:6px;letter-spacing:.16em;color:#8C6A1F;font-weight:800;}
+.professional-cert-foot{
+  position:relative;z-index:3;
+  margin-top:12px !important;padding-top:12px;
+  border-top:1px solid #E4DECf;
+  font-size:8px !important;line-height:1.55;
+}
+.professional-cert-foot strong{
+  font-size:7px;letter-spacing:.12em;color:#999BA4;
+}
+.cert-verification{
+  position:relative;z-index:3;
+  margin-top:10px;font-size:7px;letter-spacing:.02em;
+  color:#A1A3AB;
+}
+.cert-verification span{padding:0 6px;color:#C9962B;}
+.cert-actions{
+  display:flex;gap:10px;justify-content:center;margin:20px 0 4px;
+}
+
+/* Medal tier refinements */
+.professional-cert.tier-gold{
+  border-color:#C9962B !important;
+}
+.professional-cert.tier-silver{
+  border-color:#9AA0B3 !important;
+}
+.professional-cert.tier-bronze{
+  border-color:#B87333 !important;
+}
+.professional-cert.tier-silver .cert-rule span{background:linear-gradient(90deg,transparent,#9AA0B3);}
+.professional-cert.tier-silver .cert-rule span:last-child{background:linear-gradient(90deg,#9AA0B3,transparent);}
+.professional-cert.tier-silver .cert-rule i{color:#7C8195;}
+.professional-cert.tier-silver .cert-eyebrow,
+.professional-cert.tier-silver .cert-score{color:#62687E;}
+.professional-cert.tier-bronze .cert-rule span{background:linear-gradient(90deg,transparent,#B87333);}
+.professional-cert.tier-bronze .cert-rule span:last-child{background:linear-gradient(90deg,#B87333,transparent);}
+.professional-cert.tier-bronze .cert-rule i{color:#B87333;}
+.professional-cert.tier-bronze .cert-eyebrow,
+.professional-cert.tier-bronze .cert-score{color:#8A4F20;}
+

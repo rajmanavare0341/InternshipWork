@@ -1,0 +1,21 @@
+  /* ---------- Test taking ---------- */
+  .test-progress{display:flex;gap:6px;margin-bottom:22px;}
+  .test-progress .dot{flex:1;height:5px;border-radius:4px;background:var(--border);}
+  .test-progress .dot.done{background:var(--accent-teal);}
+  .test-progress .dot.current{background:var(--accent-gold);}
+  .q-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:26px;}
+  .q-count{color:var(--ink-faint);font-size:12.5px;font-weight:600;text-transform:uppercase;letter-spacing:.04em;margin-bottom:10px;}
+  .q-text{font-size:17px;font-weight:600;margin-bottom:20px;line-height:1.5;font-family:var(--font-display);}
+  .opt-choice{
+    display:flex;align-items:center;gap:12px;padding:13px 15px;border:1px solid var(--border);
+    border-radius:11px;margin-bottom:10px;font-size:14px;
+  }
+  .opt-choice:hover{border-color:var(--accent-gold);}
+  .opt-choice.selected{border-color:var(--accent-gold);background:var(--accent-gold-soft);}
+  .opt-letter{
+    width:26px;height:26px;border-radius:50%;background:#EDEEF7;color:var(--ink-soft);
+    display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;flex-shrink:0;
+  }
+  .opt-choice.selected .opt-letter{background:var(--accent-gold);color:#fff;}
+  .test-nav{display:flex;justify-content:space-between;margin-top:20px;}
+

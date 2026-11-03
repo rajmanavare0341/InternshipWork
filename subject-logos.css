@@ -1,0 +1,15 @@
+/* ---------- Subject logo everywhere ---------- */
+.subject-logo-lg{width:52px;height:52px;}
+.subject-logo-lg img{width:36px;height:36px;}
+.subject-logo-sm{width:30px;height:30px;border-radius:8px;}
+.subject-logo-sm img{width:21px;height:21px;}
+.inline-subject{display:inline-flex;align-items:center;gap:8px;}
+.generate-subject-preview{
+  margin-top:9px;display:flex;align-items:center;gap:9px;
+  padding:8px;border:1px solid var(--border);border-radius:10px;background:#FCFCFB;
+  color:var(--ink-soft);font-size:11px;
+}
+.generate-subject-preview strong{display:block;color:var(--ink);font-size:12.5px;}
+.generate-subject-preview div div{margin-top:2px;color:var(--ink-faint);}
+.form-help{margin-top:6px;color:var(--ink-faint);font-size:11px;line-height:1.4;}
+

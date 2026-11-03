@@ -1,0 +1,27 @@
+/* White registration request icon */
+.request-bell-icon{
+  width:15px;height:15px;display:block;
+  color:#fff;
+}
+.nav-item .request-bell-icon{color:#fff;}
+.nav-item:hover .request-bell-icon,
+.nav-item.active .request-bell-icon{color:#fff;}
+
+/* Print the certificate cleanly on an A4 landscape sheet */
+@media print{
+  @page{size:A4 landscape;margin:8mm;}
+  .professional-certificate-page{display:block;width:100%;}
+  .professional-cert{
+    width:100%;min-height:0;height:calc(100vh - 16mm);
+    box-shadow:none;padding:34px 48px 24px;
+  }
+  .cert-actions{display:none !important;}
+  .professional-cert .cert-name{font-size:38px;}
+}
+@media (max-width:850px){
+  .professional-cert{padding:35px 28px 25px;}
+  .cert-award-row{gap:20px;}
+  .cert-name{font-size:34px !important;}
+  .cert-signatures{grid-template-columns:1fr 70px 1fr;gap:15px;}
+  .cert-official{display:none;}
+}

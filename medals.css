@@ -1,0 +1,45 @@
+/* ---------- Medal certificates ---------- */
+.certificate-medal{
+  position:relative;
+  width:128px;
+  margin:2px auto 18px;
+  text-align:center;
+}
+.medal-disc{
+  width:82px;height:82px;margin:0 auto;
+  border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-size:38px;
+  border:5px solid rgba(255,255,255,.85);
+  box-shadow:0 5px 16px rgba(20,22,43,.18), inset 0 0 0 3px rgba(255,255,255,.35);
+  position:relative;z-index:2;
+}
+.medal-ribbon{
+  position:absolute;top:65px;left:50%;transform:translateX(-50%);
+  width:58px;height:50px;
+  clip-path:polygon(0 0,100% 0,82% 100%,50% 78%,18% 100%);
+  z-index:1;
+}
+.medal-label{
+  margin-top:9px;font-family:var(--font-display);
+  font-weight:800;font-size:12px;letter-spacing:.1em;
+}
+.certificate-medal.tier-gold .medal-disc{
+  background:radial-gradient(circle at 35% 30%,#FFE99A,#C9962B 62%,#9C6E17);
+  color:#fff;
+}
+.certificate-medal.tier-gold .medal-ribbon{background:linear-gradient(90deg,#9C6E17,#E3B94D,#9C6E17);}
+.certificate-medal.tier-gold .medal-label{color:#8C6A1F;}
+.certificate-medal.tier-silver .medal-disc{
+  background:radial-gradient(circle at 35% 30%,#FFFFFF,#BFC3D0 62%,#777C91);
+  color:#fff;
+}
+.certificate-medal.tier-silver .medal-ribbon{background:linear-gradient(90deg,#666B80,#BFC3D0,#666B80);}
+.certificate-medal.tier-silver .medal-label{color:#5F637A;}
+.certificate-medal.tier-bronze .medal-disc{
+  background:radial-gradient(circle at 35% 30%,#F1B06D,#B87333 62%,#7D441D);
+  color:#fff;
+}
+.certificate-medal.tier-bronze .medal-ribbon{background:linear-gradient(90deg,#7D441D,#C9894D,#7D441D);}
+.certificate-medal.tier-bronze .medal-label{color:#8A4F20;}
+

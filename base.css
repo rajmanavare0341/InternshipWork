@@ -1,0 +1,43 @@
+:root{
+    --bg:#F3F4F1;
+    --surface:#FFFFFF;
+    --ink:#14162B;
+    --ink-soft:#585C78;
+    --ink-faint:#8B8FA8;
+    --border:#E3E4DE;
+    --sidebar:#11132A;
+    --sidebar-soft:#8A8DB8;
+    --accent-gold:#C9962B;
+    --accent-gold-soft:#F3E6C8;
+    --accent-teal:#256F63;
+    --accent-teal-soft:#DCEEE9;
+    --accent-coral:#B3432B;
+    --accent-coral-soft:#F5E1DB;
+    --radius:14px;
+    --font-display:'Space Grotesk',sans-serif;
+    --font-body:'Inter',sans-serif;
+    --font-mono:'JetBrains Mono',monospace;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    font-family:var(--font-body);
+    background:var(--bg);
+    color:var(--ink);
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,h4{font-family:var(--font-display);margin:0;letter-spacing:-0.01em;}
+  p{margin:0;}
+  button{font-family:var(--font-body);cursor:pointer;}
+  ::selection{background:var(--accent-gold-soft);}
+
+  /* ---------- Hexagon mark ---------- */
+  .hex{
+    width:40px;height:40px;position:relative;flex-shrink:0;
+    clip-path:polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+    display:flex;align-items:center;justify-content:center;
+    font-family:var(--font-display);font-weight:700;font-size:13px;color:#fff;
+  }
+  .hex-lg{width:96px;height:96px;font-size:26px;}
+  .hex-sm{width:30px;height:30px;font-size:11px;}
+

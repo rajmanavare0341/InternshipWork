@@ -1,0 +1,14 @@
+/* ---------- Registration notifications ---------- */
+.nav-count{
+  margin-left:auto;min-width:20px;height:20px;padding:0 6px;border-radius:100px;
+  display:inline-flex;align-items:center;justify-content:center;
+  background:var(--accent-coral);color:#fff;font-size:10px;font-weight:700;
+}
+/* ---------- Certificate tiers ---------- */
+.tier-gold{border-color:#C9962B !important;color:#8C6A1F;}
+.tier-silver{border-color:#8B8FA8 !important;color:#5F637A;}
+.tier-bronze{border-color:#B87333 !important;color:#8A4F20;}
+.cert-wrap.tier-gold .cert-seal{background:linear-gradient(135deg,#C9962B,#9C6E17);}
+.cert-wrap.tier-silver .cert-seal{background:linear-gradient(135deg,#9FA3B8,#6F738A);}
+.cert-wrap.tier-bronze .cert-seal{background:linear-gradient(135deg,#C17A3A,#8A4F20);}
+
